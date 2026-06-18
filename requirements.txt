@@ -1,0 +1,8 @@
+streamlit
+lifelines
+plotly
+numpy
+pandas
+scikit-survival
+scikit-learn
+ucimlrepo

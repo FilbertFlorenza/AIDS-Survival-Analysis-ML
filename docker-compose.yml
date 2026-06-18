@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    build: .
+    container_name: streamlit_dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount kode lokal ke kontainer untuk live-reload selama fase development
+      - .:/app
+    restart: unless-stopped
